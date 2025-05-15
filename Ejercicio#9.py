@@ -38,4 +38,9 @@ for i in range (3):
                 #Capitalize y strip se utilizan para añadir mayuscula inicial a palabras y para eliminar espacios que puedan afectar 
                 #el reconocimiento de la palabra ingresada
                 tipoAcceso = input("Ingrese su tipo de acceso a internet").capitalize().strip
-                resultados.append = tipoAcceso
+                if tipoAcceso  in tiposInternet:
+                    indice = tipoAcceso(tiposInternet)
+                    resultados[i][indice] +=1
+                    total [indice] +=1
+                else:
+                    print("Error: Ingrese uno de los tipos de acceso que se muestran arriba.")
