@@ -1,6 +1,7 @@
 #Registro de consumo eléctrico por edificio en la UAM
 aulas= biblioteca = administracion = laboratorios = cafeteria = consumo_total= 0
 
+#Muestra el Menu para elegir las opciones
 while True:
    print("""******CONSUMO ELECTRICO*******
       1. Ingresar Consumo
@@ -11,6 +12,7 @@ while True:
    opc= int(input("Introduzca la opción: "))
 
    if opc == 1:
+      #Se utiliza un for para poder reitirar por los 7 dias (la semana)
       for i in range(7):
          aulas += float(input("Introduzca el consumo del aula en la mañana"))
          aulas += float(input("Introduzca el consumo del aula en la tarde"))
