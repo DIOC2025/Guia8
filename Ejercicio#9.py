@@ -44,3 +44,5 @@ for i in range (3):
                     total [indice] +=1
                 else:
                     print("Error: Ingrese uno de los tipos de acceso que se muestran arriba.")
+
+                    KIERO SMEMEN!!!!
