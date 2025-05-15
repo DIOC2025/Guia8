@@ -8,6 +8,7 @@ cont3= 0
 acum4= 0
 cont4= 0
 
+#Muestra Menu, deja elegir opciones y guarda las ventas y clientes
 while True:
    print("*************************BIENVENIDOS A LAS VENTAS DE NACATAMALES*******************")
    print("""Elija una opción
