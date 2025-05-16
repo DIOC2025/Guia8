@@ -55,5 +55,5 @@ def main():
     total_general = sum(total_por_edificio)
     print(f"\nCONSUMO TOTAL DEL CAMPUS: {total_general:.2f} kW")
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     main()
