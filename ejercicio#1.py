@@ -25,7 +25,7 @@ def main():
     
     total_feria = 0  # Acumulador del total de ventas
     
-    # Procesar cada clientekdfhdhfshdhfhdsd
+    # Procesar cada cliente
     for i in range(1, num_clientes + 1):
         print(f"\nCliente #{i}")
         
