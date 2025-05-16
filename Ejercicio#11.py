@@ -56,7 +56,7 @@ for i in range(3):
 
 print(f"""
 ╔═════════════════════════════════════════╗
-║  Total de asistencias: {sum(total)}              ║ 
+║  Total de asistencias: {sum(total)}              
 ╚═════════════════════════════════════════╝
       """)
 
