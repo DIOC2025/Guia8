@@ -16,12 +16,10 @@ for i in range (len(categoriasLibros)):
     print("la categoria es: ", categoriasLibros[i] )
     for j in range (len(subcategorias)):
         print(subcategorias[j])
-        while True: #corre infinitamente
-            prestamos = input("ingrese cuantos prestamos se realizaron dentro de cindo dias: ")
-            prestamos = int(prestamos) #convertimos prestamos a numeros enteros
-            conteos[i][j] += prestamos 
-            total[i] += prestamos  
-            break # se detiene el bucle while
+        prestamos = input("ingrese cuantos prestamos se realizaron dentro de cindo dias: ")
+        prestamos = int(prestamos) #convertimos prestamos a numeros enteros
+        conteos[i][j] += prestamos 
+        total[i] += prestamos  
 #imprimimos los datos de las categorias
 print("resultados por categorias")
 for i in range (len(categoriasLibros)):
