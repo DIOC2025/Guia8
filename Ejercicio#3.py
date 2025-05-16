@@ -27,23 +27,21 @@ while not terminar:
     suma_prom_asigs = 0.0  # acumula promedios de cada asignatura
     
     # recorremos 3 asignaturas por estudiante
-    for Nasig in range(1, 4):
-        print(f"--- Asignatura {Nasig} ---")
+    for Nasig in range (1,4):
+        print (f"---Asignatura{Nasig}---")
+         
+        sig1 = float(input("Ingrese la nota de la tarea 1: "))
+        sig2 = float(input("Ingrese la nota de la tarea 2: "))
         
-        # ingreso de notas
-        sig1 = float(input("Ingrese la nota de la primera tarea: "))
-        sig2 = float(input("Ingrese la nota de la segunda tarea: "))
-        
-        # condición de salida
         if sig1 == 0 and sig2 == 0:
-            terminar = True
-            break
-        
-        sig3  = float(input("Ingrese la nota de la tercera tarea: "))
+         terminar = True
+         break
+
+        sig3 = float(input("Ingrese la nota de la tarea 3: "))
         exam1 = float(input("Ingrese la nota del examen: "))
         
         # promedio de la asignatura
-        prom = (sig1 + sig2 + sig3 + exam1) / 4
+        prom = (sig1 + sig2 + sig3 + exam1) / 3
         print(f"Promedio Asignatura {Nasig}: {prom:.2f}\n")
         
         suma_prom_asigs += prom
