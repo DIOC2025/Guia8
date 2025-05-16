@@ -4,8 +4,8 @@
 facultades = ["FIA", "FCAE", "FMC"]
 mediosDeTransporte= ["bus", "moto", "taxi","bicicleta", "caminar", "carro"]
 
-## creamos una matriz 3*6
-##esto creara una tabla de 6 columnas y 3 filas
+## creamos una matriz 6*3
+##esto creara una tabla de 6 filas y 3 columnas
 conteos = [[0 for _ in range(len(mediosDeTransporte))] for _ in range(len(facultades))]
 
 #creamos otro arreglo
@@ -17,9 +17,9 @@ for i in range(len(facultades)):
         print(f"  Carrera {j + 1}") #suma
         for k in range(5):
              while True: # mientras sea verdadero corre por lo que detenerlo al final
-                 medio = input(f"    Estudiante {k + 1}, medio de transporte ({', '.join(mediosDeTransporte)}): ").lower() #lower hace que no importe las minusculas o mayusculas
+                 medio = input(f"    Estudiante {k + 1}, medio de transporte ({', '.join(mediosDeTransporte)}): ").lower() #lower hace que el input sea todo minusculas
                  if medio in mediosDeTransporte: #medio es la entrada del usuario e in comprueba si esta en la lista
-                     idx = mediosDeTransporte.index(medio) #index devuelve el elemento de la lista que el usuario igreso
+                     idx = mediosDeTransporte.index(medio) #index devuelve el elemento de la lista que el usuario ingreso
                      conteos[i][idx] += 1 #aumenta el contador en las columnas y filas
                      total_general[idx] += 1   # aumenta el total general 
                      break #cierra el bucle
