@@ -4,6 +4,7 @@ producto1_k2=producto2_k2=producto3_k2=producto4_k2= producto5_k2= 0
 producto1_k3= producto2_k3= producto3_k3= producto4_k3= producto5_k3= 0
 total_kiosko1= total_kiosko2= total_kiosko3= 0
 
+#Usa un while true para entrar al menu inicial y volver a el cuando haya ingresado en uno de los kiosko
 while True:
    print("*************************BIENVENIDOS A  LOS KIOSKOS*******************")
    print("""Elija una opción
@@ -13,6 +14,7 @@ while True:
       4. Salir""")
    opc= int(input("Introduzca su opcion: "))
 
+   #Para el primer kiosko da opcion de registrar segun productos y poder salirse para ir al menu principal
    if opc == 1:
     while True: 
         print(""""****Venta Primer kiosko*******
@@ -44,7 +46,8 @@ while True:
                  Ventas Producto 5: {producto5_k1}
                  Ventas Total del dia: {total_kiosko1} """)
            break
-        
+
+   ##Para el segundo kiosko da opcion de registrar segun productos y poder salirse para ir al menu principal
    if opc == 2:
       while True: 
         print(""""****Venta Segundo Kiosko****
@@ -76,7 +79,7 @@ while True:
                  Ventas Producto 5: {producto5_k2}
                  Ventas Total del dia: {total_kiosko2} """)
            break
-
+   #Para el tercer kiosko da opcion de registrar segun productos y poder salirse para ir al menu principal
    elif  opc== 3:
       while True: 
         print(""""****Venta Tercer Kiosko****
@@ -108,7 +111,7 @@ while True:
                  Ventas Producto 5: {producto5_k3}
                  Ventas Total del dia: {total_kiosko3} """)
            break
-    
+#para salirse    
    else:
        print("Ha salido exitosamente del programa")
        break
